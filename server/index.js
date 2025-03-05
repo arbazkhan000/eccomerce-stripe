@@ -94,8 +94,8 @@ app.post("/order", async (req, res) => {
 });
 
 // Health check endpoint
-app.get("/health", (req, res) => {
-    res.status(200).json({ status: "ok" });
+app.get("/", (req, res) => {
+    res.status(200).json({ success:true,error:false });
 });
 
 // Global error handler
