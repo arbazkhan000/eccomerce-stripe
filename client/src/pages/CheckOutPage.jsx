@@ -86,7 +86,7 @@ const CheckOutPage = () => {
 
         try {
             const stripe = await stripePromise;
-            const backendUrl = import.meta.env.VITE_API_URL;
+            const backendUrl = "http://localhost:2222/order;
 
             const response = await fetch(backendUrl, {
                 method: "POST",
