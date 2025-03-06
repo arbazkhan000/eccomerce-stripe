@@ -86,7 +86,7 @@ const CheckOutPage = () => {
 
         try {
             const stripe = await stripePromise;
-            const backendUrl = "http://localhost:2222/order;
+            const backendUrl = "https://quick-cart-backend.onrender.com/order;
 
             const response = await fetch(backendUrl, {
                 method: "POST",
