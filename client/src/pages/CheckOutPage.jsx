@@ -86,8 +86,9 @@ const CheckOutPage = () => {
 
         try {
             const stripe = await stripePromise;
+            const backendUrl = import.meta.env.VITE_API_URL;
 
-            const response = await fetch(import.meta.env.VITE_API_URL, {
+            const response = await fetch(backendUrl, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

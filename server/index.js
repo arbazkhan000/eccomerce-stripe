@@ -9,7 +9,7 @@ const port = process.env.PORT || 2222;
 
 // Middleware
 const corsOptions = {
-    origin:process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL,
     methods: ["GET", "POST"],
     credentials: true,
 };
@@ -95,7 +95,7 @@ app.post("/order", async (req, res) => {
 
 // Health check endpoint
 app.get("/", (req, res) => {
-    res.status(200).json({ success:true,error:false });
+    res.status(200).json({ success: true, error: false });
 });
 
 // Global error handler
